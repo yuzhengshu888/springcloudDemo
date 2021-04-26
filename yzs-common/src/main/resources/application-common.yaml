@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: yzs-common
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/yzs-cloud?serverTimezon=UTC
+    username: root
+    password: root
+
+
+mybatis:
+  mapperLocations: classpath*:mapper/**/*Dao.xml
+  type-aliases-package: com.atguigu.springcloud.entities
